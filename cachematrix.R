@@ -1,4 +1,4 @@
-## The two functions below craete, calculate, and cache the inverse of a matrix.
+## The two functions below create, calculate, and cache the inverse of a matrix.
 
 
 ## This function creates a matrix and caches its inverse.
@@ -6,8 +6,8 @@
 makeCacheMatrix <- function(myMatrix = matrix()) {
         cachedMatrixInverse <- NULL
         set <- function(y) {
-                myMatrix <<- y                                      # superassign 1) the new matrix's value and 2) cached value to NULL
-                cachedMatrixInverse <<- NULL
+                myMatrix <<- y                                      # superassign the new matrix's value 
+                cachedMatrixInverse <<- NULL                        # and also superassign cached value to NULL
         }
         get <- function() myMatrix                                  # return the matrix supplied to the makeCacheMatrix function
         setInverse <- function(solve) cachedMatrixInverse <<- solve # compute the inverse and superassign it
