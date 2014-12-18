@@ -1,7 +1,7 @@
 ## The two functions below craete, calculate, and cache the inverse of a matrix.
 
 
-## This function creates an invertible matrix and caches its inverse.
+## This function creates a matrix and caches its inverse.
 
 makeCacheMatrix <- function(myMatrix = matrix()) {
         cachedMatrixInverse <- NULL
